@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.getElementById('next');
     const submitButton = document.getElementById('submit');
 
-    let currentQuestionIndex = 0;
+    let currentQuestionIndex = 1;
     let userAnswers = [];
     const randomQuestions = getRandomQuestions();
 
