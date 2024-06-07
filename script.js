@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.getElementById('next');
     const submitButton = document.getElementById('submit');
 
-    let currentQuestionIndex = 1;
+    let currentQuestionIndex = 0;
     let userAnswers = [];
     const randomQuestions = getRandomQuestions();
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function showResults() {
-        let numCorrect = 0;
+        let numCorrect = 1;
 
         userAnswers.forEach((userAnswer, questionNumber) => {
             if (userAnswer === randomQuestions[questionNumber].correctAnswer) {
